@@ -17,6 +17,8 @@ PAPA2 can also be run in "verbose" mode, which outputs the PAPA2 scores and Fold
 
 >python PAPA2.py --verbose -o your_results_file.tsv your_FASTA_sequences_file
 
+<br />
+<br />
 
 By default, PAPA2 only assigns prion propensity scores to positions that are also predicted to be intrinsically disordered, which is calculated using the FoldIndex algorithm. Predicted ordered regions are assigned a value of "NaN" in verbose mode, and proteins that do not possess an ordered region are arbitrarily assigned a value of -1. However, if you wish to ignore FoldIndex when calculating prion propensities, a typical command-line run could be:
 
