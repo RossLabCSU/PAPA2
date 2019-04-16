@@ -36,8 +36,8 @@ NOTE: Make sure to include the file extension in the command above for your file
 5) Commands can also be combined, as in the following example:
 
 >python PAPA2.py --verbose --ignore_fold_index --window_size 50 --threshold 0.08 -o your_results_file.tsv your_FASTA_sequences_file
-
 <br />
+
 ## Major Updates
 The major changes (compared to the original PAPA algorithm) include:
 
