@@ -1,5 +1,5 @@
 # PAPA2
-PAPA2 is the 2nd generation version of the **P**rion **A**ggregation **P**rediction **A**lgorithm (PAPA), originally reported by Toombs *et al.* (2010) in [https://www.ncbi.nlm.nih.gov/pubmed/19884345].
+PAPA2 is the 2nd generation version of the **P**rion **A**ggregation **P**rediction **A**lgorithm (PAPA), originally reported by [Toombs *et al.* (2010)](https://www.ncbi.nlm.nih.gov/pubmed/19884345).
 
 PAPA2 predicts aggregation propensity of protein sequences based on empirically-derived prion propensity scores, coupled with predictions of intrinsically unstructured protein regions using the FoldIndex algorithm.
 
