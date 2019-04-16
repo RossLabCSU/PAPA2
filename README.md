@@ -13,24 +13,22 @@ NOTE: Make sure to include the file extension in the command above for your file
 <br />
 <br />
 ### Additional, Tunable Parameters
-PAPA2 can also be run in "verbose" mode, which outputs the PAPA2 scores and FoldIndex scores for every position in each protein sequence analyzed. A typical command would be:
+1) PAPA2 can also be run in "verbose" mode, which outputs the PAPA2 scores and FoldIndex scores for every position in each protein sequence analyzed. A typical command would be:
 
 >python PAPA2.py --verbose -o your_results_file.tsv your_FASTA_sequences_file
 
-<br />
-<br />
 
-By default, PAPA2 only assigns prion propensity scores to positions that are also predicted to be intrinsically disordered, which is calculated using the FoldIndex algorithm. Predicted ordered regions are assigned a value of "NaN" in verbose mode, and proteins that do not possess an ordered region are arbitrarily assigned a value of -1. However, if you wish to ignore FoldIndex when calculating prion propensities, a typical command-line run could be:
+2) By default, PAPA2 only assigns prion propensity scores to positions that are also predicted to be intrinsically disordered, which is calculated using the FoldIndex algorithm. Predicted ordered regions are assigned a value of "NaN" in verbose mode, and proteins that do not possess an ordered region are arbitrarily assigned a value of -1. However, if you wish to ignore FoldIndex when calculating prion propensities, a typical command-line run could be:
 
 >python PAPA2.py --ignore_fold_index -o your_results_file.tsv your_FASTA_sequences_file
 
 
-By default, PAPA2 uses a sliding window size of 41 amino acids. Therefore, for each position, the PAPA2 score is calculated as the average PAPA2 score across 41 consecutive 41-amino acid windows. Alternative window sizes can be specified at run-time. For example, to use a 50-amino acid window, the command would be:
+3) By default, PAPA2 uses a sliding window size of 41 amino acids. Therefore, for each position, the PAPA2 score is calculated as the average PAPA2 score across 41 consecutive 41-amino acid windows. Alternative window sizes can be specified at run-time. For example, to use a 50-amino acid window, the command would be:
 
 >python PAPA2.py --window_size 50 -o your_results_file.tsv your_FASTA_sequences_file
 
 
-Finally, a new feature in PAPA2 is the merging of overlapping high-scoring domains within a single protein. By default, only overlapping windows scoring above the recommended PAPA2=0.05 threshold are merged. However, this threshold can also be altered at run-time for more relaxed or stringent definitions of high-scoring domains. For example, to use a more stringent threshold of 0.08, a typical command would be:
+4) Finally, a new feature in PAPA2 is the merging of overlapping high-scoring domains within a single protein. By default, only overlapping windows scoring above the recommended PAPA2=0.05 threshold are merged. However, this threshold can also be altered at run-time for more relaxed or stringent definitions of high-scoring domains. For example, to use a more stringent threshold of 0.08, a typical command would be:
 
 >python PAPA2.py --threshold 0.08 -o your_results_file.tsv your_FASTA_sequences_file
 
@@ -38,7 +36,8 @@ Finally, a new feature in PAPA2 is the merging of overlapping high-scoring domai
 Commands can also be combined, as in the following example:
 
 >python PAPA2.py --verbose --ignore_fold_index --window_size 50 --threshold 0.08 -o your_results_file.tsv your_FASTA_sequences_file
-
+<br />
+<br />
 ## Major Updates
 The major changes (compared to the original PAPA algorithm) include:
 
