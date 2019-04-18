@@ -3,6 +3,8 @@ PAPA2 is the 2nd generation version of the **P**rion **A**ggregation **P**redict
 
 PAPA2 predicts aggregation propensity of protein sequences based on empirically-derived prion propensity scores, coupled with predictions of intrinsically unstructured protein regions using the FoldIndex algorithm.
 
+If you use PAPA2, please cite Cascarina and Ross (2019) (\*Link to paper when published).
+
 ## Usage
 ### Running PAPA2 with Default Parameters
 PAPA2 is a Python3 script designed to be run as a command-line application. To run PAPA2 on your sequences of interest, download the PAPA2 script and save to a location containing a FASTA file with your protein sequences of interest. Navigate to that location via command line, and run PAPA2 with the following command (will use default parameters):
