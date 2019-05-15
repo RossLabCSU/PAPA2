@@ -7,7 +7,7 @@ mPAPA predicts aggregation propensity of protein sequences based on empirically-
 ### Run mPAPA with Default Parameters
 mPAPA is a Python3 script designed to be run as a command-line application. To run mPAPA on your sequences of interest, download the mPAPA script and save to a location containing a FASTA file with your protein sequences of interest. Navigate to that location via command line, and run mPAPA with the following command (will use default parameters):
 
-> >python mPAPA.py -o your_results_file.tsv your_FASTA_sequences_file
+> />python mPAPA.py -o your_results_file.tsv your_FASTA_sequences_file
 
 NOTE: Make sure to include the file extension in the command above for your file containing FASTA-formatted sequences. FASTA files will often have the file extension ".fsa" or ".FASTA", but are sometimes also provided as plain-text files (.txt), which should still work with mPAPA. As specified above, mPAPA is designed to output your results in a **t**ab-**s**eparated **v**alues (.tsv) file. This file type was chosen for two main reasons: 1) .tsv files can be easily parsed in downstream computational processing and avoids using comma-delimiters which are often present in FASTA headers, and 2) .tsv files can be opened by Microsoft Excel for the typical user. However, if Microsoft Excel is not set as the default program to open .tsv files, the file must be opened from *within* Excel (i.e. first open Excel, then open the results file from within Excel). Alternatively, you can first change your system settings to open .tsv files with Excel by default.
 
