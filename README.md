@@ -14,27 +14,27 @@ NOTE: Make sure to include the file extension in the command above for your file
 ### Additional Tunable Parameters
 mPAPA can also be run in "verbose" mode, which outputs the mPAPA scores and FoldIndex scores for every position in each protein sequence analyzed. A typical command would be:
 
-> >python mPAPA.py --verbose -o your_results_file.tsv your_FASTA_sequences_file
+> \>python mPAPA.py --verbose -o your_results_file.tsv your_FASTA_sequences_file
 
 
 By default, mPAPA only assigns prion propensity scores to positions that are also predicted to be intrinsically disordered, which is calculated using the FoldIndex algorithm. Predicted ordered regions are assigned a value of "NaN" in verbose mode, and proteins that do not possess an ordered region are arbitrarily assigned a value of -1. However, if you wish to ignore FoldIndex when calculating prion propensities, a typical command-line run could be:
 
-> >python mPAPA.py --ignore_fold_index -o your_results_file.tsv your_FASTA_sequences_file
+> \>python mPAPA.py --ignore_fold_index -o your_results_file.tsv your_FASTA_sequences_file
 
 
 By default, mPAPA uses a sliding window size of 41 amino acids. Therefore, for each position, the mPAPA score is calculated as the average mPAPA score across 41 consecutive 41-amino acid windows. Alternative window sizes can be specified at run-time. For example, to use a 50-amino acid window, the command would be:
 
-> >python mPAPA.py --window_size 50 -o your_results_file.tsv your_FASTA_sequences_file
+> \>python mPAPA.py --window_size 50 -o your_results_file.tsv your_FASTA_sequences_file
 
 
 Finally, a new feature in mPAPA is the merging of overlapping high-scoring domains within a single protein. By default, only overlapping windows scoring above the recommended mPAPA=0.05 threshold are merged. However, this threshold can also be altered at run-time for more relaxed or stringent definitions of high-scoring domains. For example, to use a more stringent threshold of 0.08, a typical command would be:
 
-> >python mPAPA.py --threshold 0.08 -o your_results_file.tsv your_FASTA_sequences_file
+> \>python mPAPA.py --threshold 0.08 -o your_results_file.tsv your_FASTA_sequences_file
 
 
 Commands can also be combined, as in the following example:
 
-> >python mPAPA.py --verbose --ignore_fold_index --window_size 50 --threshold 0.08 -o your_results_file.tsv your_FASTA_sequences_file
+> \>python mPAPA.py --verbose --ignore_fold_index --window_size 50 --threshold 0.08 -o your_results_file.tsv your_FASTA_sequences_file
 
 ## Major Modifications
 The major changes incorporated into mPAPA include:
