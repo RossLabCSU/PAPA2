@@ -1,7 +1,7 @@
 # modified PAPA (mPAPA)
 mPAPA is a modified version of the **P**rion **A**ggregation **P**rediction **A**lgorithm (PAPA), originally reported by Toombs *et al.* (2010) in [https://www.ncbi.nlm.nih.gov/pubmed/19884345].
 
-mPAPA predicts aggregation propensity of protein sequences based on empirically-derived prion propensity scores, coupled with predictions of intrinsically unstructured protein regions using the FoldIndex algorithm.
+mPAPA predicts aggregation propensity of protein sequences based on empirically-derived prion propensity scores, coupled with predictions of intrinsically unstructured protein regions using the FoldIndex algorithm. If you use mPAPA, please cite Cascarina and Ross (2019). (*Link to paper when published*)
 
 ## Usage
 ### Run mPAPA with Default Parameters
