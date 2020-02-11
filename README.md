@@ -53,3 +53,7 @@ The major changes incorporated into mPAPA include:
 1) Assignment of the highest-scoring position in the original PAPA algorithm was offset by 1 amino acid relative to the PAPA scores. This has been fixed when score assignment position was changed in mPAPA (see #1 in Major Updates above).
 2) Stop codons were improperly handled in the original PAPA algorithm, which very slightly affected values for positions at the C-termini.
 3) Definition of the window size used in the original PAPA algorithm was offset by 1 for a subset of possible user-specified window sizes. This was also fixed when score assignment position was changed in mPAPA (see #1 in Major Updates above).
+
+#### License info
+mPAPA is subject to the terms of the GPLv3 license according to license terms of the original PAPA algorithm.
+
